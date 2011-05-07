@@ -2,13 +2,11 @@
 use strict;
 use warnings;
 use Time::HiRes qw (time);
-#use Trivia::Lingua;
-
 use Trivia::Questions::Import;
 use Trivia::Engine::Google::Simple;
 use Trivia::Engine::Google::Exact;
 use Trivia::Engine::Wikipedia::Simple;
-
+use Trivia::Net;
 use Data::Dumper;
 
 my @questions=Trivia::Questions::Import::get_questions();
