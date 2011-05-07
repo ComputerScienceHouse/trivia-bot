@@ -36,7 +36,8 @@ sub num_results_for_query{
 sub permutate{
 	my $question = shift;
     $tagger //= Lingua::EN::Tagger->new();
-    return $tagger->get_nouns($tagger->add_tags($question));
+    my $res = { $tagger->get_nouns($tagger->add_tags($question)) };
+    return join(' ', keys(%$res));
 }
 
 
