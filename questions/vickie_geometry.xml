@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
  <questions>
        <question>
-               <query>What is the captial of New York?</query>
+               <query>What is the capital of New York?</query>
                <answer>Albany</answer>
                <choice>New York City</choice>
                <choice>London</choice>

@@ -57,7 +57,7 @@
 	<question>
  		<query>What book begins with the line "Whether I shall turn out to be the hero of my own life, or whether that station will be held by anybody else, 		these pages must show?"</query>
  		<answer>David Copperfield</answer>
- 		<choice>Atlast Shrugged</choice>
+ 		<choice>Atlas Shrugged</choice>
  		<choice>Ulysses</choice>
  		<choice>Ethan Frome</choice>
  		<category>Literature</category>
@@ -65,7 +65,7 @@
  	</question>
 	<question>
  		<query>What book begins with the line "It was a pleasure to burn?"</query>
- 		<answer>Fahrenheight 451</answer>
+ 		<answer>Fahrenheit 451</answer>
  		<choice>The Old Man and the Sea</choice>
  		<choice>The Color Purple</choice>
  		<choice>The Great Gatsby</choice>

@@ -15,7 +15,9 @@ my @questions=Trivia::Questions::Import::get_questions();
 my %final_answer = ();
 
 my $num_correct=0;
+my $num_total=0;
 foreach my $question (@questions){
+	++$num_total;
 	my %question_node = %$question;
 	my $answer = $question_node{'answer'};
 	my $question_text = $question_node{'question'};
@@ -53,6 +55,7 @@ foreach my $question (@questions){
 	else{
 		print "WRONG.\n";
 	}
+	print "Currently at $num_correct correct out of $num_total total questions.\n";
 	sleep(2);
 }
 
