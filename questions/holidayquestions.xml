@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+ <questions>
+ 	<question>
+ 		<query>When is Independence Day celebrated in India?</query>
+ 		<choice>July 4th</choice>
+ 		<choice>January 3rd</choice>
+ 		<answer>August 15th</answer>
+ 		<choice>November 27th</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+	<question>
+ 	<query>In what country is Commonwealth Day celebrated (on the second Monday in March)?</query>
+ 		<choice>China</choice>
+ 		<answer>Canada</answer>
+ 		<choice>Poland</choice>
+ 		<choice>Mexico</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>ANZAC Day is celebrated in which country?</query>
+ 		<choice>Spain</choice>
+ 		<answer>Australia</answer>
+ 		<choice>Mexico</choice>
+ 		<choice>Canada</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Holi is a festival celebrated by which religion?</query>
+ 		<answer>Hinduism</answer>
+ 		<choice>Buddhism</choice>
+ 		<choice>Sikhism</choice>
+ 		<choice>Islam</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Dia de los Meurtos (The Day of the Dead) takes place on what day?</query>
+ 		<answer>November 1st</answer>
+ 		<choice>October 31st</choice>
+ 		<choice>May 8th</choice>
+ 		<choice>November 15th</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Boxing Day takes place on</query>
+ 		<answer>December 26th</answer>
+ 		<choice>June 3rd</choice>
+ 		<choice>July 9th</choice>
+ 		<choice>january 2nd</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>The King's Feast is celebrated on November 15th in what country?</query>
+ 		<answer>Belgium</answer>
+ 		<choice>Francek</choice>
+ 		<choice>Poland</choice>
+ 		<choice>Latvia</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What day is Valentine's day held?</query>
+ 		<answer>February 14th</answer>
+ 		<choice>February 18th</choice>
+ 		<choice>July 23rd</choice>
+ 		<choice>May 1st</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>What religion is Yom Kippur celebrated by?</query>
+ 		<answer>Judaism</answer>
+ 		<choice>Christianity</choice>
+ 		<choice>Catholicism</choice>
+ 		<choice>Hindiusm</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Kwanzaa was created to honor what culture?</query>
+ 		<answer>African-American</answer>
+ 		<choice>Asian-American</choice>
+ 		<choice>Eastern European</choice>
+ 		<choice>Russian</choice>
+ 		<category>Holidays</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+ </questions>

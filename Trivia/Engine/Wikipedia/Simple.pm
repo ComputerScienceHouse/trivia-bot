@@ -34,9 +34,6 @@ sub num_results_for_query{
 		}
 	}
 
-
-
-
         return $final_ret;
 }
 
@@ -50,7 +47,6 @@ sub permutate{
 	print $parser->get_diagram($question_linkage);
 	 
 	return $question;
-
 }
 
 

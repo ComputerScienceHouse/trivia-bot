@@ -37,8 +37,9 @@ foreach my $question (@questions){
 	#	my $wiki_simple_score = $wiki_simple_scores->{$key};
 		$google_simple_score = sprintf("%.4f", $google_simple_score);
 		$google_exact_score = sprintf("%.4f", $google_exact_score);
+		my $final_score = sprintf("%.4f", $final_answer{$key});
 	#	$wiki_simple_score = sprintf("%.4f", $wiki_simple_score);
-		print "A=$key GS=$google_simple_score GE=$google_exact_score\n";
+		print "A=$key GS=$google_simple_score GE=$google_exact_score FS=$final_score\n";
 	}
 		
 	my $final_answer = (sort score_hash_cmp (keys(%final_answer)))[0];

@@ -28,7 +28,6 @@ sub import_test_from_file{
 }
 
 sub import_test_questions{
-	print "Importing test questions.\n";
 	#import_questions_from_xml("questions/sample_questions.xml");
 	#import_questions_from_xml("questions/bob.xml");
 	#import_questions_from_xml("questions/vickie_geometry.xml");
@@ -36,11 +35,11 @@ sub import_test_questions{
 	#import_questions_from_xml("questions/vickie_presidents.xml");
 	#import_questions_from_xml("questions/musicianquestions.xml");
 	#import_questions_from_xml("questions/literaturequestions.xml");
-	import_questions_from_xml("questions/harrypotterquestions.xml");
-	import_questions_from_xml("questions/artquestions.xml");
-	import_questions_from_xml("questions/quotationsquestions.xml");
+	#import_questions_from_xml("questions/harrypotterquestions.xml");
+	#import_questions_from_xml("questions/artquestions.xml");
+	#import_questions_from_xml("questions/quotationsquestions.xml");
+	import_questions_from_xml("questions/holidayquestions.xml");
 	my $num_questions = scalar(@questions);
-	print "Num_questions: $num_questions\n";
 }
 
 sub get_questions{
