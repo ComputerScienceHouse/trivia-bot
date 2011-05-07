@@ -25,7 +25,7 @@ sub num_results_for_query{
        	        q => $query,
         );
 
-       	die "response status failure" if $res->responseStatus != 200;
+       	die "Oh dear, REST response status 200: Temp-banned from Google\n" if $res->responseStatus != 200;
         my $data = $res->responseData;
 
        	my $cursor = $data->cursor;
@@ -65,8 +65,7 @@ foreach my $question_node_ref (@questions){
 	}
 	my $final_answer = (sort score_hash_cmp (keys(%scores)))[0];
 	my $elapsed_time = Time::HiRes::tv_interval($start_time);
-	print "G:S Elapsed time: $elapsed_time seconds.\n\n";
-
+	
 	return $scores_ref;
 }
 
