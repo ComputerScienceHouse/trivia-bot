@@ -1,0 +1,138 @@
+<?xml version='1.0'?>
+ <questions>
+ 	<question>
+ 		<query>What class did Rolanda Hooch teach?</query>
+ 		<choice>Potions</choice>
+ 		<choice>Care of Magical Creatures</choice>
+ 		<answer>Flying</answer>
+ 		<choice>Defense Against the Dark Arts</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which house is the Grey Lady the ghost of?</query>
+ 		<choice>Gryffindor</choice>
+ 		<answer>Ravenclaw</answer>
+ 		<choice>Slytherin</choice>
+ 		<choice>Hufflepuff</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>If the Sorting Hat says you are "true and unafraid of toil" what hosue do you belong to?</query>
+ 		<choice>Gryffindor</choice>
+ 		<answer>Hufflepuff</answer>
+ 		<choice>Ravenclaw</choice>
+ 		<choice>Slytherin</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What does the Hogwarts motto "Draco dormiens nunquam titillandus" translate to?</query>
+ 		<answer>Never tickle a sleeping dragon</answer>
+ 		<choice>Angry dragons never sleep</choice>
+ 		<choice>Angry dragons are never lazy</choice>
+ 		<choice>Sleeping dragons are titillating</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What country is Viktor Krum from?</query>
+ 		<answer>Bulgaria</answer>
+ 		<choice>Ireland</choice>
+ 		<choice>Austria</choice>
+ 		<choice>Britain</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+	<question>
+ 		<query>Ludo Bagman used to play for this quidditch team?</query>
+ 		<answer>Wimborne Wasps</answer>
+ 		<choice>Chudley Cannons</choice>
+ 		<choice>Puddlemere United</choice>
+ 		<choice>Pride of Portree</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+	<question>
+ 		<query>What kind of animal is Trevor, Neville Longbottom's pet?</query>
+ 		<answer>Toad</answer>
+ 		<choice>Owl</choice>
+ 		<choice>Cat</choice>
+ 		<choice>Snake</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>What is Ron Weasley's middle name?</query>
+ 		<answer>Bilius</answer>
+ 		<choice>Arthur</choice>
+ 		<choice>Perseus</choice>
+ 		<choice>Ethan</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which of these characters is not a member of the Gryffindor house?</query>
+ 		<answer>Padma Patil</answer>
+ 		<choice>Parvati Patil</choice>
+ 		<choice>Colin Creevey</choice>
+ 		<choice>Lavender Brown</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What cures most poisons?</query>
+ 		<answer>Bezoar</answer>
+ 		<choice>Boomslang Skin</choice>
+ 		<choice>Mandrake Root</choice>
+ 		<choice>Unicorn Blood</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What profession did Hermione's parents hold?</query>
+ 		<answer>Dentists</answer>
+ 		<choice>Doctors</choice>
+ 		<choice>Bus Drivers</choice>
+ 		<choice>Librarians</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who is the author of Fantastic Beasts and Where to Find Them?</query>
+ 		<answer>Newt Scamander</answer>
+ 		<choice>Rubeus Hagrid</choice>
+ 		<choice>Kennilworthy Whisp</choice>
+ 		<choice>Gilderoy Lockhart</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who did Cedric Diggory take to the Yule Ball?</query>
+ 		<answer>Cho Chang</answer>
+ 		<choice>Hermione Granger</choice>
+ 		<choice>Luna Lovegood</choice>
+ 		<choice>Pansy Parkinson</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What dragon did Harry fight in The Goblet of Fire?</query>
+ 		<answer>Hungarian Horntail</answer>
+ 		<choice>Chinese Fireball</choice>
+ 		<choice>Swedish Shortsnout</choice>
+ 		<choice>Norwegian Ridgeback</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>What is Voldemort's real name?</query>
+ 		<answer>Tom Marvolo Riddle</answer>
+ 		<choice>Sirius Black</choice>
+ 		<choice>Crookshanks</choice>
+ 		<choice>Dedalus Diggle</choice>
+ 		<category>Harry Potter</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+ </questions>

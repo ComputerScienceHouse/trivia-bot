@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+ <questions>
+ 	<question>
+ 		<query>Spongebob Squarepants works as a fry cook here:</query>
+ 		<choice>Barg'N Mart</choice>
+ 		<answer>Krusty Krab</answer>
+ 		<choice>Goofy Goober's Ice Cream Party Boat</choice>
+ 		<choice>Mrs. Puff's Boating School</choice>
+ 		<category>Television</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>This is the name of Batman's side-kick:</query>
+ 		<choice>Ross</choice>
+ 		<answer>Robin</answer>
+ 		<choice>Ronald</choice>
+ 		<choice>Alfred</choice>
+ 		<category>Pop-culture</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>If Jim has three apples and Jessica has two apples, Jim and Jessica have this:</query>
+ 		<choice>A loaf of bread</choice>
+ 		<choice>Four apples</choice>
+ 		<choice>Five lemons</choice>
+ 		<answer>Five apples</answer>
+ 		<category>Math</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+ </questions>
+

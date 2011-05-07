@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+ <questions>
+ 	<question>
+ 		<query>The famous painting "Starry Night" was painted by</query>
+ 		<choice>Georgia O'Keefe</choice>
+ 		<choice>Salvador Dali</choice>
+ 		<answer>Vincent Van Gogh</answer>
+ 		<choice>Pablo Picasso</choice>
+ 		<category>Art</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>The Mona Lisa was painted by</query>
+ 		<choice>Pablo Picasso</choice>
+ 		<answer>Leonardo da Vinci</answer>
+ 		<choice>Giovanni Batista</choice>
+ 		<choice>Vincent Van Gogh</choice>
+ 		<category>Art</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>The Mona Lisa was painted by</query>
+ 		<choice>Pablo Picasso</choice>
+ 		<answer>Leonardo da Vinci</answer>
+ 		<choice>Giovanni Batista</choice>
+ 		<choice>Vincent Van Gogh</choice>
+ 		<category>Art</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Bas relief is a sculpture technique in which</query>
+ 		<answer>a modelled form is raised from the background</answer>
+ 		<choice>the subject is depicted showing signs of relief</choice>
+ 		<choice>the colors are primarily black and white</choice>
+ 		<choice>everything is carved in geometric shapes</choice>
+ 		<category>Art</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Rene Magritte is known for his</query>
+ 		<answer>surrealist art</answer>
+ 		<choice>realistic human sculptures</choice>
+ 		<choice>furniture miniatures</choice>
+ 		<choice>intricate textiles</choice>
+ 		<category>Art</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Clause Monet is known for his</query>
+ 		<answer>impressionist paintings</answer>
+ 		<choice>surrealist art</choice>
+ 		<choice>intricate mosaics</choice>
+ 		<choice>photography</choice>
+ 		<category>Art</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Ansel Adams is known for his</query>
+ 		<answer>photographs of the American West</answer>
+ 		<choice>photographs of the Australian Outback</choice>
+ 		<choice>oil paintings</choice>
+ 		<choice>carvings of instruments</choice>
+ 		<category>Art</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Gouache is a type of paint</query>
+ 		<answer>consisting of pigment suspended in water</answer>
+ 		<choice>that contains pigment suspension in acrylic polymer emulsion</choice>
+ 		<choice>that consist of pure powdered pigment and a binder</choice>
+ 		<choice>that is bound with a medium of drying oil</choice>
+ 		<category>Art</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+	<question>
+ 		<query>The Scream was painted by</query>
+ 		<answer>Edvard Munch</answer>
+ 		<choice>Vincent Van Gogh</choice>
+ 		<choice>Salvador Dali</choice>
+ 		<choice>Claude Monet</choice>
+ 		<category>Art</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which of these artists is known for his motif of melted clocks?</query>
+ 		<answer>Salvador Dali</answer>
+ 		<choice>Claude Monet</choice>
+ 		<choice>Vincent Van Gogh</choice>
+ 		<choice>Georgia O'Keefe</choice>
+ 		<category>Art</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+ </questions>

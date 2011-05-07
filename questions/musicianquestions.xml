@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+ <questions>
+ 	<question>
+ 		<query>Who was the drummer for the Beatles?</query>
+ 		<choice>John Lennon</choice>
+ 		<choice>Paul McCartney</choice>
+ 		<answer>Ringo Starr</answer>
+ 		<choice>George Harrison</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which artst performs the song "I Want It That Way?"</query>
+ 		<choice>N*Sync</choice>
+ 		<answer>Backstreet Boys</answer>
+ 		<choice>New Kids On The Block</choice>
+ 		<choice>TLC</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who performs the song "Sk8er Boi?"</query>
+ 		<choice>Madonna</choice>
+ 		<answer>Avril Lavigne</answer>
+ 		<choice>Christina Aguilera</choice>
+ 		<choice>Hilary Duff</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who is Hannah Montana the alter ego of?</query>
+ 		<answer>Miley Cyrus</answer>
+ 		<choice>Hilary Duff</choice>
+ 		<choice>Selena Gomez</choice>
+ 		<choice>Demi Lovato</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>The Broadway play "Moving Out" contains music by what artist?</query>
+ 		<answer>Billy Joel</answer>
+ 		<choice>Bon Jovi</choice>
+ 		<choice>Michael Jackson</choice>
+ 		<choice>Ricky Martin</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which of these songs by Elvis Presley was a number one single?</query>
+ 		<answer>Are You Lonesome Tonight?</answer>
+ 		<choice>I Walk The Line</choice>
+ 		<choice>Apron Strings</choice>
+ 		<choice>I Washed My Hands in Muddy Water</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who was the pianist for The Rolling Stones?</query>
+ 		<answer>Ian Stewart</answer>
+ 		<choice>Mick Jagger</choice>
+ 		<choice>Keith Richards</choice>
+ 		<choice>Brian Jones</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which of these people is a Grammy Lifetime Achievement Award winner?</query>
+ 		<answer>Bob Dylan</answer>
+ 		<choice>Mick Jagger</choice>
+ 		<choice>Miley Cyrus</choice>
+ 		<choice>Billy Joel</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Which song won Song of The Year at the 2010 Grammys?</query>
+ 		<answer>Single Ladies by Beyonce</answer>
+ 		<choice>Poker Face by Lady Gaga</choice>
+ 		<choice>You Belong With Me by Taylor Swift</choice>
+ 		<choice>Use Somebody by Kings of Leon</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who won Best New Artist at the 2010 Grammys?</query>
+ 		<answer>Zac Brown Band</answer>
+ 		<choice>Keri Hilson</choice>
+ 		<choice>MGMT</choice>
+ 		<choice>The Ting Tangs</choice>
+ 		<category>Musicians</category>
+ 		<difficulty>Hard</difficulty>
+ 	</question>
+ </questions>
