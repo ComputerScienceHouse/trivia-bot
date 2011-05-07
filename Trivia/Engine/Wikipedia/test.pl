@@ -1,26 +1,13 @@
-#!/usr/bin/perl
-use warnings;
+#!/usr/bin/env perl
+
 use strict;
+use warnings;
+use 5.010;
 
-use WWW::Wikipedia;
-use Data::Dumper;
+use Trivia::Engine::Wikipedia::Simple;
+use Trivia::Questions::Import;
 
-my $wiki = WWW::Wikipedia->new();
+my @questions = Trivia::Questions::Import::get_questions();
 
-my $result = $wiki->search( 'perl' );
-
-#Deal with redirects
-if ($result -> text() =~ m/#redirect/){
-	my $newquery = $result-> text();
-	$newquery =~ s/#redirect//;
-	print "N=$newquery\n";
-	$result = $wiki->search($newquery);
-}
-
-#if ( $result -> text() ) {
-#	print $result->text();
-
-#}
-
-print Dumper($result->text());
-#print join ( "\n" , $result -> related() );
+Trivia::Engine::Wikipedia::Simple::import(@questions);
+Trivia::Engine::Wikipedia::Simple::solve();
