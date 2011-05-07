@@ -19,11 +19,16 @@ sub import {
 sub _grab_nouns {
     my ($question, $func) = @_;
     my $res = { $func->($tagger->add_tags($question)) };
-    return join(' ', keys(%$res));
+    join(' ', keys(%$res))
+}
+
+sub is_bob {
+    my $question = shift;
+    $question =~ /\bnot\b/
 }
 
 sub solve {
-    my ($nouns, $entry, $question);
+    my ($nouns, $entry, $question, $score_ref);
 
     $tagger //= Lingua::EN::Tagger->new();
     $wiki //= WWW::Wikipedia->new( language => 'en' );
@@ -36,8 +41,30 @@ sub solve {
         }
 
         $entry = $wiki->search($nouns);
-        say $entry->title if defined $entry;
+        return undef if not $entry;
+        return $score_ref = _calc_results($entry, $question_ref);
     }
+}
+
+sub _calc_results {
+    my ($entry, $question_ref) = @_;
+    my ($num, @res, $score_ref, $total);
+    $score_ref = {};
+    $total = 0;
+    
+    foreach my $answer (@{$question_ref->{answer_pool}}) {
+        chomp $answer;
+
+        @res = $entry->text =~ /$answer/gm;
+        $num = @res;
+
+        $score_ref->{$answer} = $num;
+        $total += $num;
+    }
+
+    map { $score_ref->{$_} = ( $score_ref->{$_} / $total ) } keys %$score_ref if $total != 0;
+
+    return $score_ref;
 }
 
 1;
