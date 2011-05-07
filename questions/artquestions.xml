@@ -18,24 +18,7 @@
  		<category>Art</category>
  		<difficulty>Easy</difficulty>
  	</question>
-	<question>
- 		<query>The Mona Lisa was painted by</query>
- 		<choice>Pablo Picasso</choice>
- 		<answer>Leonardo da Vinci</answer>
- 		<choice>Giovanni Batista</choice>
- 		<choice>Vincent Van Gogh</choice>
- 		<category>Art</category>
- 		<difficulty>Easy</difficulty>
- 	</question>
-	<question>
- 		<query>Bas relief is a sculpture technique in which</query>
- 		<answer>a modelled form is raised from the background</answer>
- 		<choice>the subject is depicted showing signs of relief</choice>
- 		<choice>the colors are primarily black and white</choice>
- 		<choice>everything is carved in geometric shapes</choice>
- 		<category>Art</category>
- 		<difficulty>Medium</difficulty>
- 	</question>
+
 	<question>
  		<query>Rene Magritte is known for his</query>
  		<answer>surrealist art</answer>
@@ -46,7 +29,7 @@
  		<difficulty>Medium</difficulty>
  	</question>
 	<question>
- 		<query>Clause Monet is known for his</query>
+ 		<query>Claude Monet is known for his</query>
  		<answer>impressionist paintings</answer>
  		<choice>surrealist art</choice>
  		<choice>intricate mosaics</choice>

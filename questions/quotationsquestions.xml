@@ -1,0 +1,93 @@
+<?xml version='1.0'?>
+ <questions>
+ 	<question>
+ 		<query>Who said "We are all in the gutter, but some of us are looking at the stars?"</query>
+ 		<choice>Abraham Lincoln</choice>
+ 		<choice>J.K. Rowling</choice>
+ 		<answer>Oscar Wilde</answer>
+ 		<choice>George Washington</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind?"</query>
+ 		<choice>Pablo Picasso</choice>
+ 		<answer>Dr. Seuss.</answer>
+ 		<choice>Marilyn Monroe</choice>
+ 		<choice>Barack Obama</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Be the change that you wish to see in the world?"</query>
+ 		<choice>Dr. Seuss</choice>
+ 		<answer>Mahatma Gandhi</answer>
+ 		<choice>Albert Einstein</choice>
+ 		<choice>Maya Angelou</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Insanity is doing the same thing, over and over again, but expecting different results?"</query>
+ 		<answer>Albert Einstein</answer>
+ 		<choice>Enrico Fermi</choice>
+ 		<choice>Oscar Wilde</choice>
+ 		<choice>Maya Angelou</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Life is not measured by the number of breaths we take, but by the moments that take our breath away?"</query>
+ 		<answer>Maya Angelou</answer>
+ 		<choice>Eleanor Roosevelt</choice>
+ 		<choice>Mae West</choice>
+ 		<choice>Oscar Wilde</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Without music, life would be a mistake?"</query>
+ 		<answer>Friedrich Nietzsche</answer>
+ 		<choice>Wolfgang Mozart</choice>
+ 		<choice>Johann Bach</choice>
+ 		<choice>Ansel Adams</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Never put off until tomorrow what you can do the day after tomorrow?"</query>
+ 		<answer>Mark Twain</answer>
+ 		<choice>Neil Gaiman</choice>
+ 		<choice>Oscar Wilde</choice>
+ 		<choice>William Shakespeare</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Not all those who wander are lost?"</query>
+ 		<answer>JRR Tolkein</answer>
+ 		<choice>Dr. Seuss</choice>
+ 		<choice>Jane Austen</choice>
+ 		<choice>Tim Burton</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "I love deadlines. I like the whooshing sound they make as they fly by?"</query>
+ 		<answer>Douglas Adams</answer>
+ 		<choice>Neil Gaiman</choice>
+ 		<choice>Tim Burton</choice>
+ 		<choice>Michael Crichton</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Medium</difficulty>
+ 	</question>
+	<question>
+ 		<query>Who said "Be nice to nerds. Chances are you'll end up working for one?"</query>
+ 		<answer>Bill Gates</answer>
+ 		<choice>Steve Jobs</choice>
+ 		<choice>Albert Einstein</choice>
+ 		<choice>Charles Darwin</choice>
+ 		<category>Quotations</category>
+ 		<difficulty>Easy</difficulty>
+ 	</question>
+ </questions>

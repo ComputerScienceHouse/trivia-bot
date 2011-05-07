@@ -19,7 +19,7 @@
  		<difficulty>Easy</difficulty>
  	</question>
 	<question>
- 		<query>If the Sorting Hat says you are "true and unafraid of toil" what hosue do you belong to?</query>
+ 		<query>If the Sorting Hat says you are "true and unafraid of toil" what house do you belong to?</query>
  		<choice>Gryffindor</choice>
  		<answer>Hufflepuff</answer>
  		<choice>Ravenclaw</choice>
@@ -100,7 +100,7 @@
  		<difficulty>Easy</difficulty>
  	</question>
 	<question>
- 		<query>Who is the author of Fantastic Beasts and Where to Find Them?</query>
+ 		<query>Who is the author of "Fantastic Beasts and Where to Find Them"?</query>
  		<answer>Newt Scamander</answer>
  		<choice>Rubeus Hagrid</choice>
  		<choice>Kennilworthy Whisp</choice>
@@ -118,7 +118,7 @@
  		<difficulty>Medium</difficulty>
  	</question>
 	<question>
- 		<query>What dragon did Harry fight in The Goblet of Fire?</query>
+ 		<query>What dragon did Harry fight in "The Goblet of Fire"?</query>
  		<answer>Hungarian Horntail</answer>
  		<choice>Chinese Fireball</choice>
  		<choice>Swedish Shortsnout</choice>

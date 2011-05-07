@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-package Trivia::Engine::Google::Simple;
+package Trivia::Engine::Google::Exact;
 use REST::Google::Search;
 use List::Util qw[min max];
 REST::Google::Search->http_referer('http://google.com');
@@ -74,8 +74,7 @@ foreach my $question_node_ref (@questions){
 	}
 	my $final_answer = (sort score_hash_cmp (keys(%scores)))[0];
 	my $elapsed_time = Time::HiRes::tv_interval($start_time);
-	print "G:S Elapsed time: $elapsed_time seconds.\n\n";
-
+	print "G:E Elapsed time: $elapsed_time seconds.\n\n";
 	return $scores_ref;
 }
 

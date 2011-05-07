@@ -3,6 +3,7 @@
 #include <GL/glu.h>
 #include <math.h>
 #include <stdlib.h>
+#include <GL/glut.h>
 
 void bail(const char *msg)
 {
@@ -229,6 +230,11 @@ int main(int argc, char *argv[])
         gluSphere(quadric, 1, 64, 64);
         glDisable(GL_LIGHTING);
 
+
+
+	glRasterPos2i(100, 120);
+	glColor4f(0.0f, 0.0f, 1.0f, 1.0f);
+	//glutBitmapString(GLUT_BITMAP_9_BY_15, "text to render");
         SDL_GL_SwapBuffers();
     }
 

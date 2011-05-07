@@ -10,15 +10,6 @@
  		<difficulty>Medium</difficulty>
  	</question>
 	<question>
- 		<query>Which of these is not a Dr. Seuss book?</query>
- 		<choice>The Cat In The Hat</choice>
- 		<answer>Goodnight Moon</answer>
- 		<choice>Fox in Socks</choice>
- 		<choice>Green Eggs and Ham</choice>
- 		<category>Literature</category>
- 		<difficulty>Easy</difficulty>
-	</question>
-	<question>
  		<query>Which of these was written by Charles Dickens?</query>
  		<choice>Grapes of Wrath</choice>
  		<answer>Bleak House</answer>

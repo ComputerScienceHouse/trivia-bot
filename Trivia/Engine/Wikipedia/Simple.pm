@@ -1,10 +1,12 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-package Trivia::Engine::Google::Simple;
-use REST::Google::Search;
+package Trivia::Engine::Wikipedia::Simple;
+use WWW::Wikipedia;
+use Data::Dumper;
 use List::Util qw[min max];
-REST::Google::Search->http_referer('http://google.com');
+my $wiki = WWW::Wikipedia->new();
+
 my %scores;
 my @questions;
 
@@ -13,36 +15,39 @@ sub input{
 }
 
 sub num_results_for_query{
-	my $query = shift;
+	my $final_ret = 0;
 
-        my $res = REST::Google::Search->new(
-       	        q => $query,
-        );
+	my $base_query = shift;
+	my $possible_answer = shift;
 
-       	die "response status failure" if $res->responseStatus != 200;
-        my $data = $res->responseData;
+        my $result = $wiki ->search($base_query);
 
-       	my $cursor = $data->cursor;
-        return $cursor->estimatedResultCount;
+	#Deal with redirects
+	if ($result -> text() =~ m/#redirect/){
+		my $newquery = $result-> text();
+		$newquery =~ s/#redirect//;
+		$result = $wiki->search($newquery);
+	}
+	if ( $result -> text() ) {
+		if($result-> text() =~ m/$possible_answer/){
+			$final_ret=1;
+		}
+	}
+
+
+
+
+        return $final_ret;
 }
 
 #TODO add query permutations that will be helpful, using simple natural language processing
 sub permutate{
 	my $question = shift;
-#	my $parser = new Lingua::LinkParser;
-#	my $parsed_question = $parser->create_sentence($question);
-#	my $question_linkage = $parsed_question->linkage(1);
+	my $parser = new Lingua::LinkParser;
+	my $parsed_question = $parser->create_sentence($question);
+	my $question_linkage = $parsed_question->linkage(1);
 	
-#	print $parser->get_diagram($question_linkage);
-	
-#	print "________START QUERY DEBUG_________\n";
-#	my $main_subject_et_al =  'S[s|p]' .          # singular and plural subject
-#		                '(?:[\w\*]{1,3})*' . # any optional subscripts
-#       	        		':(\d+):' .        # number of the word
-#		                '(\w+(?:\.\w)*)';
-#	my @matches = ($question_linkage =~ /$main_subject_et_al/mx);
-
-#	print @matches;
+	print $parser->get_diagram($question_linkage);
 	 
 	return $question;
 
@@ -74,7 +79,7 @@ foreach my $question_node_ref (@questions){
 	}
 	my $final_answer = (sort score_hash_cmp (keys(%scores)))[0];
 	my $elapsed_time = Time::HiRes::tv_interval($start_time);
-	print "G:S Elapsed time: $elapsed_time seconds.\n\n";
+	print "W:S Elapsed time: $elapsed_time seconds.\n\n";
 
 	return $scores_ref;
 }
@@ -97,7 +102,7 @@ sub find_best{
 	foreach my $possible_answer (@options){
 		my @query_permutations = permutate($question);
 		foreach my $base_query (@query_permutations){
-			my $num_results = Trivia::Engine::Google::Simple::num_results_for_query($base_query.' '."\"".$possible_answer."\"");
+			my $num_results = Trivia::Engine::Wikipedia::Simple::num_results_for_query($base_query,$possible_answer);
 			my $score = $num_results; #TODO make score more complicated
 
 			if(exists($results{$possible_answer})){
@@ -124,11 +129,6 @@ sub find_best{
 		$scored_results{$possible_answer} = $score;
 	}
 	
-	#Normalize
-	my @scores;
-	foreach my $possible_answer (keys(%scored_results)){
-		$scored_results{$possible_answer} /= $sum_score;
-	}
 
 	return \%scored_results;
 }
