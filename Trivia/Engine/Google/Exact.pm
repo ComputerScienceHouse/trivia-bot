@@ -35,9 +35,7 @@ sub num_results_for_query{
 #TODO add query permutations that will be helpful, using simple natural language processing
 sub permutate{
 	my $question = shift;
-    $tagger //= Lingua::EN::Tagger->new();
-    my $res = { $tagger->get_nouns($tagger->add_tags($question)) };
-    return join(' ', keys(%$res));
+    return $question;
 }
 
 
