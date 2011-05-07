@@ -41,7 +41,9 @@ sub solve {
         }
 
         $entry = $wiki->search($nouns);
-        return undef if not $entry;
+        $score_ref = { };
+        map { $score_ref->{$_} = 0 } @{$question_ref->{answer_pool}};
+        return $score_ref if not $entry;
         return $score_ref = _calc_results($entry, $question_ref);
     }
 }
