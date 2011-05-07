@@ -24,12 +24,15 @@ foreach my $question (@questions){
 	Trivia::Engine::Google::Simple::input($question);
 	Trivia::Engine::Google::Exact::input($question);
     Trivia::Engine::Wikipedia::Simple::import($question);
+
+	system("kill -HUP `pgrep avatar`");
 	my $google_simple_scores = Trivia::Engine::Google::Simple::solve();
 	my $google_exact_scores = Trivia::Engine::Google::Exact::solve();
 	my $wiki_simple_scores = Trivia::Engine::Wikipedia::Simple::solve();
 	#print Dumper($wiki_simple_scores);
+	system("kill -INT `pgrep avatar`");
 	%final_answer = ();
-
+	
 	print "Question was: $question_text\n";
 	foreach my $key (keys(%$google_simple_scores)){
 		$final_answer{$key} = $google_simple_scores->{$key}*0.4 + $google_exact_scores->{$key}*0.6;

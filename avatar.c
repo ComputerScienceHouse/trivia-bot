@@ -4,6 +4,15 @@
 #include <math.h>
 #include <stdlib.h>
 #include <GL/glut.h>
+#include <signal.h>
+
+void sighup(); /* routines child will call upon sigtrap */
+void sigint();
+void sigquit();
+
+enum state { idle, thinking };
+enum state next_state = idle;
+enum state current_state = idle;
 
 void bail(const char *msg)
 {
@@ -20,8 +29,20 @@ void set_vsync(int enable)
 #endif
 }
 
+void sighup(){
+   signal(SIGHUP,sighup); /* reset signal */
+   printf("thinking RXd\n");
+   next_state= thinking;
+}
+void sigint(){
+   signal(SIGHUP,sighup); /* reset signal */
+   printf("idle RXd\n");
+   next_state= idle;
+}
 int main(int argc, char *argv[])
 {
+    signal(SIGHUP,sighup);
+    signal(SIGINT,sigint);
     const int screen_x = 1260, screen_y = 1000;
     int running = 1, ticks_prev, ticks_curr;
     float delta, cam_th = 0.0f, cam_x, cam_z, planet_th = 0.0f, sat_th = 0.0f;
@@ -85,9 +106,9 @@ int main(int argc, char *argv[])
     gluQuadricTexture(quadric, GL_FALSE);
 
     // render loop
-    enum state { idle, thinking };
-    enum state next_state = idle;
-    enum state current_state = idle;
+//    enum state { idle, thinking };
+//    enum state next_state = idle;
+//    enum state current_state = idle;
     myRed = 0.0f;
     myGreen = 1.0f;
     ballColor[0] = myRed;
