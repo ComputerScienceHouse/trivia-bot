@@ -35,7 +35,7 @@ foreach my $question (@questions){
 	print "Question was: $question_text\n";
 	foreach my $key (keys(%$google_simple_scores)){
 		$final_answer{$key} = $google_simple_scores->{$key}*0.4 + $google_exact_scores->{$key}*0.6;
-		$final_answer{$key} += $wiki_simple_scores->{$key}*0.9;
+		$final_answer{$key} += $wiki_simple_scores->{$key}*1;
 		my $google_simple_score = $google_simple_scores->{$key};
 		my $google_exact_score = $google_exact_scores->{$key};
 		my $wiki_simple_score = $wiki_simple_scores->{$key};
