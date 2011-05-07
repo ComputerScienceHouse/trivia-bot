@@ -4,9 +4,15 @@ use warnings;
 package Trivia::Engine::Google::Simple;
 use REST::Google::Search;
 use List::Util qw[min max];
+use Lingua::EN::Tagger;
+
+use 5.010;
+
 REST::Google::Search->http_referer('http://google.com');
 my %scores;
 my @questions;
+
+state $tagger;
 
 sub input{
 	@questions = @_;
@@ -29,23 +35,8 @@ sub num_results_for_query{
 #TODO add query permutations that will be helpful, using simple natural language processing
 sub permutate{
 	my $question = shift;
-#	my $parser = new Lingua::LinkParser;
-#	my $parsed_question = $parser->create_sentence($question);
-#	my $question_linkage = $parsed_question->linkage(1);
-	
-#	print $parser->get_diagram($question_linkage);
-	
-#	print "________START QUERY DEBUG_________\n";
-#	my $main_subject_et_al =  'S[s|p]' .          # singular and plural subject
-#		                '(?:[\w\*]{1,3})*' . # any optional subscripts
-#       	        		':(\d+):' .        # number of the word
-#		                '(\w+(?:\.\w)*)';
-#	my @matches = ($question_linkage =~ /$main_subject_et_al/mx);
-
-#	print @matches;
-	 
-	return $question;
-
+    $tagger //= Lingua::EN::Tagger->new();
+    return $tagger->get_nouns($tagger->add_tags($question));
 }
 
 
