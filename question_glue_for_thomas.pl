@@ -24,9 +24,15 @@ foreach my $question (@questions){
 	}
 	
 	#print for thomas
-	print $question_text."\n";
+	print de_enter($question_text)."\n";
 	foreach my $q (@filtered_questions){
-		print $q."\n";
+		print de_enter($q)."\n";
 	}
-	print $answer."\n";
+	print de_enter($answer)."\n";
+}
+
+sub de_enter{
+	my $str = shift;
+	$str =~ s/\n/ /;
+	return $str;
 }
